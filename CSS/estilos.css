@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    height: 100%;
+
+}
+.div-principal {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7; /* Fondo gris suave */
+}
+.contenedor-formulario {
+    background: rgba(255, 255, 255, 0.8); /* Blanco con transparencia */
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #d1d1d1; /* Gris claro */
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.5s ease;
+}
+.logo {
+    margin-bottom: 20px;
+}
+.logo a {
+    font-size: 32px;
+    color: #5a5a5a; /* Gris oscuro */
+}
+.input-a {
+    width: 80%;
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    background-color: #fafafa; /* Fondo claro para los inputs */
+    color: #333; /* Texto oscuro */
+}
+.input-a::placeholder {
+    color: #999; /* Color del placeholder */
+}
+.contenedor-button {
+    margin: 20px 0;
+}
+.button-log {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background: #3b82f6; /* Azul vibrante */
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+.button-reg {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background: #f97316; /* Naranja suave */
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+.button-log:hover {
+    background: #2563eb; /* Azul más oscuro al hacer hover */
+    transform: scale(1.05);
+}
+.button-reg:hover {
+    background: #ea580c; /* Naranja más intenso al hacer hover */
+    transform: scale(1.05);
+}
+
+        /* Estilos para el contenedor de radio buttons */
+        .contenedor-genero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .contenedor-genero input[type="radio"] {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid #3b82f6; /* Azul para el borde */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .contenedor-genero input[type="radio"]:checked {
+            background-color: #3b82f6; /* Azul cuando está seleccionado */
+            border-color: #2563eb;
+        }
+
+        .contenedor-genero label {
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        /* Estilos para el contenedor del checkbox */
+        .contenedor-terminos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .contenedor-terminos input[type="checkbox"] {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #f97316; /* Naranja para el borde */
+            border-radius: 4px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .contenedor-terminos input[type="checkbox"]:checked {
+            background-color: #f97316; /* Naranja cuando está seleccionado */
+            border-color: #ea580c;
+        }
+
+        .contenedor-terminos label {
+            color: #333;
+        }
+
+        .contenedor-terminos a {
+            color: #3b82f6; /* Azul para el enlace */
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        .contenedor-terminos a:hover {
+            text-decoration: underline;
+        }
+
+        .input-select {
+            width: 80%;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        .input-textarea {
+            width: 80%;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fafafa;
+            color: #333;
+            resize: vertical;
+        }
+        .legends{
+            font-size: 22px;
+            margin: 20px;
+        }
+        label {
+            display: block; /* Makes the label take the full width */
+            margin-bottom: 5px; /* Space between label and input */
+            color: #333; /* Adjust color as needed */
+        }
