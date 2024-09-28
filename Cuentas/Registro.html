@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/EstiloCont.css">
+    <link rel="stylesheet" href="../CSS/EstiloForm.css">
+    <link rel="stylesheet" href="../CSS/EstilosGen.css">
+</head>
+<body>
+    <div class="div-principal">
+        <div class="contenedor-formulario">
+            <div class="logo">
+                <a href="../index.html">
+                    <i class="fa-solid fa-hand-holding-heart pulse"></i>
+                </a>
+            </div>
+            <div class="titulo-l pulse">
+                <span>Welcome to Benevolux</span>
+            </div>
+            <form action="">
+                <input class="input-a" type="text" placeholder="New User">
+                <input class="input-a" type="password" placeholder="New Password">
+                <input class="input-a" type="email" placeholder="New Email">
+                <div class="contenedor-genero">
+                    <input type="radio" id="mujer" name="genero">
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="hombre" name="genero">
+                    <label for="hombre">Hombre</label>
+                </div>
+                <div class="contenedor-terminos">
+                    <input type="checkbox" id="term" name="term">
+                    <label for="term">I agree to the<a href="">Terms and conditions</a></label>
+                </div>
+                <div class="contenedor-button">
+                    <button class="button-reg">Register</button>
+                </div>
+                <div class="contenedor-button">
+                    <button class="button-log" type="button" onclick="mover()">I have account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        <footer>
+            <div class="footer-redes">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </footer>
+    <script>
+        function mover(element) {
+            const formulario = document.querySelector('.contenedor-formulario');
+            
+            formulario.style.transform = 'translateY(800px)';
+            formulario.style.transition = 'transform 1.5s ease-in-ou'; 
+            setTimeout(function() {
+                window.location.href = 'Login.html';
+            }, 800);
+        }
+    </script>
+</body>
+</html>
+
+

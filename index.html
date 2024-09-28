@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos :D</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/EstiloCont.css">
+    <link rel="stylesheet" href="CSS/EstiloForm.css">
+    <link rel="stylesheet" href="CSS/EstilosGen.css">
+</head>
+<body>
+    <div class="div-principal2">
+        <header class="header">
+            <nav>
+                <div class="logonav">
+                    <a href="#"><i class="fa-solid fa-hand-holding-heart pulse"> Benevolux</i></a>
+                </div>
+                <ul>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                    <li><a href="#Objetivos">Objetivos</a></li>
+                    <li><a href="#Ubicaciones">Ubicaciones</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+                <div class="logonav">
+                    <a href="Cuentas/Login.html"><i class="fa-solid fa-user"> Login</i></a>
+                </div>
+            </nav>
+        </header>
+        <section id="Nosotros">
+            <div class="Nosotros-contenedor">
+                <h3>Nosotros</h3> 
+                <div class="nosotros-contenido">
+                    <div class="nosotros-texto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam vitae blanditiis odit voluptates, et quibusdam unde vel reprehenderit consectetur fugit! Vero natus aspernatur ut ratione similique fugit, adipisci dolor.</p>
+                    </div>
+                    <div class="nosotros-imagen">
+                        <img src="Imagenes/noso.webp" alt="Imagen adicional" width="100%"> <!-- Cambia el ancho según sea necesario -->
+                    </div>
+                </div>
+        </section>
+        <section id="Objetivos">
+            <div class="objetivos-contenedor">
+                <h3>Objetivos</h3>
+                <div class="nosotros-contenido">
+                    <div class="objetivos-imagen">
+                        <img src="Imagenes/Objet.webp" alt="Imagen adicional" >
+                    </div>
+                    <div class="objetivos-texto">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum exercitationem, magni perferendis mollitia numquam corporis beatae consequuntur voluptate unde aliquam dicta delectus! Quaerat reiciendis impedit magni porro nesciunt aliquam dolores.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="Ubicaciones">
+            <div class="contenedor-ubicaciones">
+                <h3>Nuestras Sedes</h3>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.3719092163415!2d-76.98482989104319!3d-12.155063843873481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b84113003ee7%3A0x1fd71e1502ba8da6!2sMall%20del%20Sur!5e0!3m2!1ses!2spe!4v1727502256709!5m2!1ses!2spe" loading="lazy"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.831309838297!2d-77.10749271425323!3d-12.0551250115698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c950dd521af9%3A0xb6170f05e03d3f94!2sMallplaza%20Bellavista!5e0!3m2!1ses!2spe!4v1727502370283!5m2!1ses!2spe" loading="lazy"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7436.390709300629!2d-71.51933701586466!3d-16.417366746522507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b1a6bcfafb7%3A0xe15fe4683a1d43c0!2sMall%20Aventura%20Arequipa!5e0!3m2!1ses!2spe!4v1727502455243!5m2!1ses!2spe" loading="lazy" ></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5039505061422!2d-77.08634212396845!3d-12.077613242477895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c970336b0725%3A0xae2a6f969b48786e!2sPlaza%20San%20Miguel!5e0!3m2!1ses!2spe!4v1727502521621!5m2!1ses!2spe" loading="lazy" ></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="Contacto">
+            <div class="contenedor-formulario">
+                <form action="">
+                    <legend class="legends">Contacto</legend>
+                    <label for="mail" class="">Email:</label>
+                    <input type="email" name="mail" id="mail" class="input-a" required>
+                    <label for="asun" class="input-label">Asunto:</label>
+                    <select name="asun" id="asun" class="input-select" required>
+                        <option value="negocios">Negocios</option>
+                        <option value="informacion">Información</option>
+                    </select>
+
+                    <label for="mensa" class="">Mensaje:</label>
+                    <textarea name="mensa" id="mensa" class="input-textarea" required></textarea>
+
+                    <div class="contenedor-button">
+                        <button type="submit" class="button-reg">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-redes">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

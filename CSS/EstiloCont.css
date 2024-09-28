@@ -1,0 +1,132 @@
+.div-principal {
+    overflow: hidden;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-image: url(../Imagenes/login.webp);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.div-principal2 {
+    overflow-x: hidden;
+}
+
+.contenedor-formulario {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #d1d1d1;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.5s ease;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.contenedor-button {
+    margin: 20px 0;
+}
+
+.contenedor-genero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.contenedor-terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.Nosotros-contenedor, .objetivos-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.Nosotros-contenedor h3, .objetivos-contenedor h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.nosotros-contenido, .objetivos-contenedido {
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
+    width: 70%; 
+}
+
+.nosotros-texto, .objetivos-texto {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.nosotros-texto p, .objetivos-texto p {
+    width: 70%;
+    margin-top: 15%;
+}
+
+.nosotros-imagen, .objetivos-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-imagen img, .objetivos-imagen img {
+    max-width: 300px;
+    border-radius: 15px;
+    height: auto;
+}
+
+.contenedor-ubicaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contenedor-ubicaciones h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contenedor-ubicaciones div {
+    flex: 1 1 45%;
+    max-width: 45%;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+    .Nosotros-contenedor, .objetivos-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor-ubicaciones div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

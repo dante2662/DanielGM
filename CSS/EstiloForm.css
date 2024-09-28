@@ -1,0 +1,145 @@
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    align-items: center; 
+}
+.logo a {
+    font-size: 42px;
+    color: #8b6696; 
+}
+.titulo-l{
+    margin-bottom: 20px;
+    font-size: 20px; 
+    color: #8b6696; 
+    font-weight: bold; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    transition: color 0.3s ease;
+}
+.input-a {
+    width: 80%;
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    background-color: #fafafa; 
+    color: #333; 
+}
+.input-a::placeholder {
+    color: #999; 
+}
+.button-log {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background: #3b82f6;
+    transition: 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+.button-reg {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background: #f97316; 
+    transition: 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+.button-log:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+.button-reg:hover {
+    background: #ea580c; 
+    transform: scale(1.05);
+}
+.contenedor-genero input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #3b82f6; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+.contenedor-genero input[type="radio"]:checked {
+    background-color: #3b82f6;
+    border-color: #2563eb;
+}
+.contenedor-genero label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+.contenedor-terminos input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #f97316;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.contenedor-terminos input[type="checkbox"]:checked {
+    background-color: #f97316; 
+    border-color: #ea580c;
+}
+
+.contenedor-terminos label {
+    color: #333;
+}
+
+.contenedor-terminos a {
+    color: #3b82f6; 
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.contenedor-terminos a:hover {
+    text-decoration: underline;
+}
+.input-select {
+    border: 1px solid #cfcfcf;
+    width: 80%;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.input-textarea {
+    border: 1px solid #cfcfcf;
+    width: 80%;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    color: #333;
+    resize: vertical;
+}
+.legends{
+    font-size: 22px;
+    margin: 20px;
+}
+@media (max-width: 600px) {
+    .logo {
+        flex-direction: column; 
+        text-align: center;
+        gap: 5px; 
+    }
+
+    .logo a {
+        font-size: 48px; 
+    }
+
+    .titulo-l {
+        font-size: 18px; 
+        margin-right: 0; 
+    }
+}
